@@ -1,7 +1,7 @@
 %     function driver(input_directory, output_directory)
 % % 
 input_directory='E:\ECG_chalenge\Training_WFDB';
-output_directory='E:\ECG_chalenge\result_test2';
+output_directory='E:\ECG_chalenge\result_test905';
 	% Find files.
     input_files = {};
     for f = dir(input_directory)'
@@ -16,7 +16,7 @@ output_directory='E:\ECG_chalenge\result_test2';
     
 
     
-    % read number of unique classes
+    % read number of unique classes 
     classes = get_classes(input_directory,input_files);
 
 

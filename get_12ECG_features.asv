@@ -14,14 +14,13 @@
     
     % combine two leads inorder to make sure there are enough R peak for
     % generating 5 beats features per signal
-    current_lead=[];
      for i= 1:num_leads
-          current_lead=[current_lead,data(i,1000:end)];  
+          current_lead=[current_lead,data(i,2000:end)];  
       end
 
           
  
-   signal=medianFilter(current_lead,Fs);
+  signal=medianFilter(current_lead,Fs);
       [~, qrs_index]=pan_tompkin(signal,Fs,0);
           
              Starting_R_peak=1;     
